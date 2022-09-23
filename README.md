@@ -2,5 +2,5 @@ HERE I WAS STUDYING SOME RANDOM FOUND PROJECTS IN INTERNET, TRYING TO INPROVE MY
 BUT OTHERS ARE WAY OVER MY CURRENT LVL OF PYTHON CODING.
 
 
-# Simple-Games-Python-PongGame
+# Simple-Games-Python
 Simple games - learning the way...
