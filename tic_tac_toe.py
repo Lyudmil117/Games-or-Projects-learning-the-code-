@@ -27,7 +27,7 @@ from help_ttt import draw_board, check_turn, check_for_win
 
 
 import os
-#e tuka pravq promqna 121231230000000000
+#e tuka pravq promqna
 
 spots = {1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7', 8: '8', 9: '9'}
 
