@@ -3,4 +3,4 @@ BUT OTHERS ARE WAY OVER MY CURRENT LVL OF PYTHON CODING.
 
 
 # Simple-Games-Python-PongGame
-Simple Pong game developed on python
+Simple games - learning the way...
