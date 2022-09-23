@@ -44,7 +44,7 @@ while playing:
 
     #Now writhe a message if Player inputs invalid input
     if prev_turn == turn:
-        print("Invalid spot selection, please press another")
+        print("Invalid spot selection, please press another !")
     prev_turn = turn
     print("Player" + str((turn % 2) + 1) + "'s turn: Pick your spot  or press q to quit")
 
