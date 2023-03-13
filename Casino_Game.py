@@ -17,8 +17,14 @@ class SlotMachine:
             if user_input == "Stop":
                 print("Bye, looooserrrr!!!")
                 print(f"You have miserable: {self.balance} leva!")
-                self.balance = 0
-                continue
+                new_input = input("Do you wnat to withraw it?")
+                if new_input == "yes":
+                    print("Off you go now!")
+                    self.balance = 0
+                    continue
+                else:
+                    continue
+
             else:
                 if user_input.isdigit():
                     self.bet = int(user_input)
@@ -48,22 +54,21 @@ class SlotMachine:
                 print("You suck!!! Try to win something!!!")
 
             self.balance += winnings - self.bet
+            if self.balance <= 0:
+                print("You have lost everything! Looser!")
 
 
 
     def add_money(self, amount):
             self.balance += amount
-
             print(f"You added {amount} leva and now your {self.balance} is leva!")
 
-
-    def withraw_money(self, amount):
-        if self.amount <= self.balance:
-            self.balance -= amount
-            print(f"You withrew {amount} leva, and now your balance is {self.balance} leva.")
-        else:
-            print(f"You have only {self.balance} leva IDIOT!!!")
-
+    # def withraw_money(self, amount):
+    #     if self.amount <= self.balance:
+    #         self.balance -= amount
+    #         print(f"You withrew {amount} leva, and now your balance is {self.balance} leva.")
+    #     else:
+    #         print(f"You have only {self.balance} leva IDIOT!!!")
 
 machine = SlotMachine()
 money_amount = int(input("How much do you want to start with:"))
@@ -73,4 +78,4 @@ print("------Welcome to the Greatest Casino of the World! Now you will be be f*c
 print()
 while machine.balance > 0:
     machine.play()
-print("You have lost everything. Looser!!!")
+
